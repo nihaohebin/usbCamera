@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/img_web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ff000000"/>
+
+    <cn.usbfacedetect.view.MyVideoView
+        android:id="@+id/videoview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+
+    <cn.usbfacedetect.view.FaceOverlayViewCompare
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/iv_face"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="right|top"
+        />
+    <Button
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btn_open"
+        android:text="Open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>
